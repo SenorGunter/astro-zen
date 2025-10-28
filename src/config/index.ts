@@ -1,23 +1,20 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Mark Wernthaler - Cloud & DevOps Engineer",
+  author: "Mark Wernthaler",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-  lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+    "Techliebhaber aus München. Spezialisiert auf Cloud und DevOps Entwicklung.",
+  lang: "de",
+  siteLogo: "/pb.jpg",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/mark-wernthaler/" },
+    { text: "Github", href: "https://github.com/SenorGunter" }
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -25,73 +22,79 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Mark Wernthaler",
+    specialty: "Cloud & DevOps Engineer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+      "Entwickler aus München. Spezialisiert auf Cloud und DevOps Engineering.",
     email: "example@email.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "webeet.io",
+      position: "DevSecOps Praktikant",
+      startDate: "Sep 2025",
+      endDate: "",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Erstellung von Terraform Infrastruktur für das Deployment einer AI-App auf AWS.",
+        "Setup von CI/CD Pipelines.",
+        "Deployment eines ELK-Stacks (Elasticsearch, Logstash, Kibana) um Logging der App zu gewährleisten.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Masterschool",
+      position: "Software Engineering Kurs mit Spezialisierung auf Cloudentwicklung",
+      startDate: "Sep 2024",
+      endDate: "Nov 2025",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Teilnahme am Intensivprogramm für Softwareentwicklung der Masterschool, Teil eines globalen Netzwerks, das von Branchenführern unterstützt wird und darauf ausgerichtet ist, praktische Engineering-Fähigkeiten aufzubauen.",
+        "Sammelte praktische Erfahrungen durch projektbasiertes Lernen und Mentoring mit Schwerpunkt auf AWS-Engineering und Deployment.",
+        "Erwarb Kenntnisse in Python, objektorientierter Programmierung, Webanwendungsarchitektur, relationalen Datenbanken, SQL, Linux, Flask, HTML/CSS, Docker und Cloud-Technologien.",
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      company: "KARE Design",
+      position: "Franchise Manager",
+      startDate: "Jun 2023",
+      endDate: "Mai 2024",
+      summary: [
+        "Anleitung der Planung und Entwicklung einer SaaS-Anwendung zur Verbesserung der betrieblichen Effizienz für Franchisepartner",
+        "Betreuung von internationalen Franchisepartnern in den Anliegen: Website, Marketing, Verträge, etc.",
+      ],
+    },
+    {
+      company: "Berufsschule für Groß- & Außenhandel | KARE Design",
+      position: "Duale Ausbildung Groß- & Außenhandelsmanagement",
+      startDate: "Sep 2021",
+      endDate: "Mai 2023",
+      summary: [
+        "Abgeschlossene IHK-Ausbildung mit gewähltem Schwerpunkt auf Großhandel.",
+        "Kaufmännisches Verständnis in den Bereichen Einkauf, Vertrieb, Logistik und Steuerung",
+      ],
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "GroceryMate",
+      summary: "Implementierung der Terraform Infrastruktur für das Cloud-Deployment eines Onlineshops für Lebensmittel.",
+      linkSource: "https://github.com/SenorGunter/AWS_grocery",
+      image: "/grocerymate_screen.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
-    },
-    {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "SMS - Stock Market Service",
+      summary: "Hackathon Sieger Projekt, welches eine einfache Lösung zur Abfrage von Echtzeit Aktieninfos per SMS bietet.",
+      linkSource: "https://github.com/saifmasterschool/allyoucaneat",
+      image: "/wow_screen.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, ich bin Mark Wernthaler, mit einer neugefundenen Liebe für Cloud und DevOps Entwicklung. Als Teil meiner Umschulung erlernte ich sowohl fundierte Backendkenntnisse mit Python und SQL, wie auch Grundkenntnisse in den gängigen Frontendentwicklung.
+\n
+      Durch meine frühere Erfahrung im Handel, habe ich außerdem ein gefestigtes Verständnis von Betriebswirtschaftlichen Abläufen.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+
     `,
-    image: "/alejandro-big.jpg",
+    image: "/pb.jpg",
   },
 };
 
